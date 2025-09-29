@@ -11,5 +11,5 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: ecr-go-repo
-          artifact-id: dd7d593f-9ae1-4a51-a6c7-989e70c38c6d
+          artifact-id: 8ea1fc15-9886-4f84-9ac7-22d8476d29b9
           target-environment: Pre-Prod

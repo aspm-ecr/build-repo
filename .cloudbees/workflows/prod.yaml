@@ -1,0 +1,15 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: prod
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    steps:
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: ecr-go-repo
+          artifact-id: dd7d593f-9ae1-4a51-a6c7-989e70c38c6d
+          target-environment: Pre-Prod
